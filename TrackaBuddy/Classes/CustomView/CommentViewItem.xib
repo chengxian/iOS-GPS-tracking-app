@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CommentViewItem">
+            <rect key="frame" x="0.0" y="0.0" width="426" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IOe-qf-hPq" userLabel="img_profile">
+                    <rect key="frame" x="0.0" y="5" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="ESN-ZB-Tyl"/>
+                        <constraint firstAttribute="height" constant="40" id="uzd-ZZ-btx"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4J-L1-h7V" userLabel="btn_profile">
+                    <rect key="frame" x="0.0" y="5" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="PeD-uX-ggb"/>
+                        <constraint firstAttribute="height" constant="40" id="brc-aV-FXq"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnProfilePressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="12O-Tx-ZLR"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kevin Hughes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwZ-HT-2gR" userLabel="lbl_user_name">
+                    <rect key="frame" x="48" y="5" width="145" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="APS-Sz-tGt"/>
+                        <constraint firstAttribute="width" constant="145" id="YRX-VD-s6f"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                    <color key="textColor" red="0.29335631979999999" green="0.3922746171" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An even more radiant Tash!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vH-S8-iMW" userLabel="lbl_comment">
+                    <rect key="frame" x="201" y="5" width="225" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="yud-2d-lgf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21 hours ago" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0t-T2-YAR" userLabel="lbl_hour">
+                    <rect key="frame" x="48" y="25" width="110" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="110" id="mb7-rR-d5x"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qU1-XP-UCS" userLabel="btn_like">
+                    <rect key="frame" x="163" y="25" width="50" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="8nz-7W-RhL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="like">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnLikePressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="Y9G-rx-BKJ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="u4J-L1-h7V" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="Ceg-bS-mH2"/>
+                <constraint firstItem="IOe-qf-hPq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="H9U-PE-vVK"/>
+                <constraint firstItem="IOe-qf-hPq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HtK-qF-Hui"/>
+                <constraint firstItem="fwZ-HT-2gR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="J18-x4-sTt"/>
+                <constraint firstAttribute="bottom" secondItem="B0t-T2-YAR" secondAttribute="bottom" constant="5" id="OLi-cg-bta"/>
+                <constraint firstItem="B0t-T2-YAR" firstAttribute="top" secondItem="fwZ-HT-2gR" secondAttribute="bottom" id="Rgb-SQ-QA6"/>
+                <constraint firstAttribute="trailing" secondItem="9vH-S8-iMW" secondAttribute="trailing" id="Sad-Ba-5Wo"/>
+                <constraint firstItem="qU1-XP-UCS" firstAttribute="top" secondItem="9vH-S8-iMW" secondAttribute="bottom" id="TX6-lH-Yvr"/>
+                <constraint firstItem="9vH-S8-iMW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="lWx-YG-ZLO"/>
+                <constraint firstItem="u4J-L1-h7V" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lYF-ko-XCK"/>
+                <constraint firstItem="B0t-T2-YAR" firstAttribute="leading" secondItem="u4J-L1-h7V" secondAttribute="trailing" constant="8" id="naK-oK-4V9"/>
+                <constraint firstItem="qU1-XP-UCS" firstAttribute="leading" secondItem="B0t-T2-YAR" secondAttribute="trailing" constant="5" id="riN-5i-KE9"/>
+                <constraint firstItem="9vH-S8-iMW" firstAttribute="leading" secondItem="fwZ-HT-2gR" secondAttribute="trailing" constant="8" id="t9u-6C-fbe"/>
+                <constraint firstAttribute="bottom" secondItem="qU1-XP-UCS" secondAttribute="bottom" constant="5" id="uVf-0W-rsT"/>
+                <constraint firstItem="fwZ-HT-2gR" firstAttribute="leading" secondItem="u4J-L1-h7V" secondAttribute="trailing" constant="8" id="zHC-6p-EgK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnLike" destination="qU1-XP-UCS" id="OHz-ch-CDl"/>
+                <outlet property="imgProfile" destination="IOe-qf-hPq" id="rpD-Dp-yY9"/>
+                <outlet property="lblComment" destination="9vH-S8-iMW" id="oJS-VU-j1L"/>
+                <outlet property="lblHour" destination="B0t-T2-YAR" id="aQE-iK-fF4"/>
+                <outlet property="lblUserName" destination="fwZ-HT-2gR" id="lDK-Di-TCr"/>
+            </connections>
+            <point key="canvasLocation" x="317" y="147"/>
+        </view>
+    </objects>
+</document>

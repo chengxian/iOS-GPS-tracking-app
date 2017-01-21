@@ -1,0 +1,50 @@
+//
+//  TrackaBuddy_PrefixHeader.pch
+//  TrackaBuddy
+//
+//  Created by Alexander on 11/07/15.
+//  Copyright (c) 2015 Shirong Huang. All rights reserved.
+//
+
+#ifndef TrackaBuddy_TrackaBuddy_PrefixHeader_pch
+#define TrackaBuddy_TrackaBuddy_PrefixHeader_pch
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "AppDelegate.h"
+    #import "Global.h"
+    #import <Parse/Parse.h>
+    #import <ParseUI/ParseUI.h>
+    #import <ParseCrashReporting/ParseCrashReporting.h>
+    #import "AFNetClient.h"
+    #import "DateUtils.h"
+    #import "ProgressHUD.h"
+    #import <GoogleMaps/GoogleMaps.h>
+    #import <MapKit/MapKit.h>
+    #import "GKImageCropViewController.h"
+    #import "GKImagePicker.h"
+    #import <QuartzCore/QuartzCore.h>
+    #import <AVFoundation/AVFoundation.h>
+    #import "VPImageCropperViewController.h"
+    #import "UIImage+Resize.h"
+    #import "UIImage+IF.h"
+    #import "Reachability.h"
+    #import "UserDataSingleton.h"
+    #import <AssetsLibrary/AssetsLibrary.h>
+    #import "ALAssetsLibrary+CustomAlbum.h"
+    #import <MediaPlayer/MediaPlayer.h>
+    #import "UIImage+BlurredFrame.h"
+    #import <MagicalRecord/MagicalRecord.h>
+    #import <MagicalRecord/MagicalRecord+ShorthandMethods.h>
+    #import <MagicalRecord/MagicalRecordShorthandMethodAliases.h>
+#endif
+
+
+#endif
